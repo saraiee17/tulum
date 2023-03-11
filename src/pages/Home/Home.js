@@ -1,15 +1,17 @@
+import './Home.scss';
+
 function Home(){
 
     return(
-        <div className='Home'>
-                <section class='hero'>
+        <div className='home'>
+                <section class='home_hero'>
                     <img src='' alt='hero pic'/>
                     <div>
-                        <p className='home__title'>BIENVENIDO</p>
+                        <p className='home__hero--title'>BIENVENIDO</p>
                         <h2>ECO - LUXURY VILLA FOR SALE IN TULUM $290,000</h2>
                     </div>
                 </section>
-                <section class='squares'>
+                <section class='home__squares'>
                     <h2> VILLA LOFT, XUNKARI</h2>
                     <div>
                         <div>
@@ -42,7 +44,7 @@ function Home(){
                         </div>
                     </div>
                 </section>
-                <section class='details'>
+                <section class='home__details'>
                     <h3>Private sale by the owner. Delivery May 2023!</h3>
                     <h3>Interior: 126m2 / 1,351ft2</h3>
                     <h3>Exterior: 64m2 / 6,94ft2</h3>
@@ -50,11 +52,11 @@ function Home(){
                     <h3>24 - Hour Security, Maintenace & Administration, Mayan Host, Cenote Membership.</h3>
                     <button>CONTACT US</button>
                 </section>
-                <section class='amenities'>
+                <section class='home__amenities'>
                     <h4>VILLA LOFT, XUNKARI TULUM</h4>
                     <p>gallery</p>
                 </section>
-                <section class='cards'>
+                <section class='home__cards'>
                     <h4>CONNECT TO DISCONECT</h4>
                     <div>
                         <div>
@@ -80,7 +82,7 @@ function Home(){
                         </div>  
                     </div>
                 </section>
-                <section class='gallery'>
+                <section class='home__gallery'>
                     <h4>PHOTO GALLERY, PHASE I</h4>
                     <div>
                         <img src='' alt= 'placeholder'/>
@@ -91,7 +93,7 @@ function Home(){
                         <img src='' alt= 'placeholder'/>
                     </div>
                 </section>
-                <footer class='contact'>
+                <footer class='home__contact'>
                     <h3>UNIQUE OPPORTUNITY</h3>
                     <p>Xunkari Tulum Phase III is almost sold out and will take years until completed. Take ownership of this beautiful Xunkari Villa Loft Unit as soon as May 2023!</p>
                     <p>Xunkari eco-luxury living as a real-estate Tulum project already won a multitude of awards and earned the spotlight of global recognition.</p>
