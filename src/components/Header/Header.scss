@@ -11,13 +11,14 @@
     &__title{
         border: 2px solid black;
         margin: 1rem;
-        margin-left: 4rem;
-        margin-right: 4rem;
         font-weight:400;
-        width: 400px;
-        position: relative;
+        width: 340px;
     }
     &__flex{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__navflex{
         display: flex;
         justify-content:space-between;
     }
@@ -32,9 +33,7 @@
 }
 
 .material-symbols-rounded {
-    position: absolute;
-    right: 28.5rem;
-    top: 1.5rem;
+    padding-top: 1.25rem;
     font-size:x-large;
     font-family: 'Material Symbols Outlined';
   font-variation-settings:
