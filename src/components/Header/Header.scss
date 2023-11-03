@@ -8,8 +8,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: colors.$title;
     &__title{
-        border: 2px solid black;
+        border: 2px solid colors.$gallerytext;
         margin: 1rem;
         font-weight:400;
         width: 340px;

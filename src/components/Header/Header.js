@@ -13,7 +13,7 @@ function Header(){
         <div className='header'>
                 <div className='header__flex'>
                     <span class="material-symbols-rounded" onClick={() => navigate('/modal')}>menu</span>
-                    <h1 className='header__title'>Villa for Sale in Tulum</h1>
+                    <h1 className='header__title'>Tulum Loft for Sale</h1>
                 </div>
                 <div className='header__navflex'>
                     <Link to='/'>
