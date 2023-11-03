@@ -1,3 +1,158 @@
 @use "../../styles/colors";
 @use "../../styles/global";
 @use "../../styles/mixins";
+
+
+.home{
+    &__hero{
+        background-color: colors.$herobackground;
+        display: flex;
+        margin: 1rem;
+    }
+    &__squares{
+        background-color: colors.$cubebackground;
+        padding: 1rem;
+        &--flex{
+            margin: 1rem;
+            display: flex;
+            justify-content: space-around;
+        }
+        &--single{
+            background-color: colors.$cubes;
+            margin: 1rem;
+            min-width: 95px;
+            padding: 0.5rem;
+        }
+        &--icon{
+            max-width: 50px;
+            max-height: 50px;
+            padding: 0.5rem;
+        }
+    }
+    &__details{
+        font-weight: 100;
+        margin: 2rem;
+    }
+    &__cards{
+        &--flex{
+            margin: 1rem;
+            @include mixins.tablet{
+                display: flex;  
+            }
+        }
+        &--single{
+            display: flex;
+            flex-direction: column;
+            background-color: colors.$herobackground;
+        }
+        &--img{
+            max-height: 300px;
+        }
+    }
+    &__gallery{
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 1.5rem;
+        padding-bottom: 1rem;
+        &--container{
+            display: flex;
+            flex-direction: column;
+            max-width: 100%;
+            height: auto;
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding-left: 3.5rem;
+            @include mixins.tablet{
+                padding-left: 7rem;
+            }
+        }
+        &--img{
+            margin: 0.5rem;
+            max-height: 30%;
+            max-width: 30%;
+            justify-content: center;
+        }
+    }
+    &__contact{
+        &--instagram{
+            max-width: 50px;
+            margin: 1rem;
+        }
+        &--flex{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+
+button{
+    background-color: colors.$herobackground;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 1rem;
+}
+
+button:hover{
+    background-color: colors.$buttonhover;
+    box-shadow: 0rem 0.8rem 0.45rem -0.3rem rgba(0, 0, 0, 0.2);
+}
+
+.slideshow-container {
+    max-width: 500px;
+    position: relative;
+    margin: auto;
+  
+    /* Hide the images by default */
+    // .mySlides {
+    //   display: none;
+    // }
+  
+    /* Next & previous buttons */
+    // .prev, .next {
+    //   cursor: pointer;
+    //   position: absolute;
+    //   top: 50%;
+    //   width: auto;
+    //   margin-top: -22px;
+    //   padding: 16px;
+    //   color: white;
+    //   font-weight: bold;
+    //   font-size: 18px;
+    //   transition: 0.6s ease;
+    //   border-radius: 0 3px 3px 0;
+    //   user-select: none;
+  
+    //   /* Position the "next button" to the right */
+    //   &.next {
+    //     right: 0;
+    //     border-radius: 3px 0 0 3px;
+    //   }
+  
+    //   /* On hover, add a black background color with a little bit see-through */
+    //   &:hover {
+    //     background-color: rgba(0, 0, 0, 0.8);
+    //   }
+    // }
+  
+  
+    // /* Fading animation */
+    // .fade {
+    //   animation-name: fade;
+    //   animation-duration: 1.5s;
+  
+    //   @keyframes fade {
+    //     from {
+    //       opacity: 0.4;
+    //     }
+  
+    //     to {
+    //       opacity: 1;
+    //     }
+    //   }
+    // }
+  }

@@ -23,13 +23,25 @@
         justify-content:space-between;
     }
     &__nav{
-        border-bottom: 1px solid colors.$navunderline;
+        color: colors.$text;
         margin: 1rem;
+        padding-bottom: 0.5rem;
         display: none;
-        @include mixins.desktop{
+        @include mixins.tablet{
             display: block;
         }
     }
+    &__nav:hover{
+        color: colors.$navunderline;
+    }
+    &__nav:visited {
+        color: #000;
+    }
+
+}
+
+.underline{
+    border-bottom: 1px solid colors.$navunderline;
 }
 
 .material-symbols-rounded {
@@ -44,4 +56,13 @@
   @include mixins.desktop{
     display:none;
   }
+}
+
+
+a:link {
+    text-decoration: none;
+  }
+
+h4{
+    color: colors.$gallerytext;
 }
