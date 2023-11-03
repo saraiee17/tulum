@@ -1,0 +1,68 @@
+@use '../../styles/colors';
+@use '../../styles/global';
+@use '../../styles/mixins';
+@use '../../styles/fonts';
+
+.header{
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__title{
+        border: 2px solid black;
+        margin: 1rem;
+        font-weight:400;
+        width: 340px;
+    }
+    &__flex{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__navflex{
+        display: flex;
+        justify-content:space-between;
+    }
+    &__nav{
+        color: colors.$text;
+        margin: 1rem;
+        padding-bottom: 0.5rem;
+        display: none;
+        @include mixins.tablet{
+            display: block;
+        }
+    }
+    &__nav:hover{
+        color: colors.$navunderline;
+    }
+    &__nav:visited {
+        color: #000;
+    }
+
+}
+
+.underline{
+    border-bottom: 1px solid colors.$navunderline;
+}
+
+.material-symbols-rounded {
+    padding-top: 1.25rem;
+    font-size:x-large;
+    font-family: 'Material Symbols Outlined';
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 600,
+  'GRAD' 0,
+  'opsz' 40;
+  @include mixins.desktop{
+    display:none;
+  }
+}
+
+
+a:link {
+    text-decoration: none;
+  }
+
+h4{
+    color: colors.$gallerytext;
+}

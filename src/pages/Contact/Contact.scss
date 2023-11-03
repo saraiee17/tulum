@@ -1,0 +1,22 @@
+@use "../../styles/colors";
+@use "../../styles/global";
+@use "../../styles/mixins";
+
+.contact{
+    &__button{
+        background-color: colors.$whatsapp;
+        color:white;
+        margin: 1rem;
+        &--logo{
+            max-width: 20px;
+            max-height: 20px;
+            margin-right: 0.5rem;
+        }
+    }
+    &__button:hover{
+        background-color: colors.$whatsapphover;
+    }
+    &__map{
+        max-width: 400px;
+    }
+}

@@ -1,0 +1,11 @@
+@use '../../styles/colors';
+@use '../../styles/global';
+@use '../../styles/mixins';
+@use '../../styles/fonts';
+
+.Nav{
+    background-color: colors.$cubebackground;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

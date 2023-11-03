@@ -1,78 +1,125 @@
-function Home(){
+import './Home.scss';
+import {Link} from 'react-router-dom';
+import { useState } from 'react';
+import Cenote from '../../assets/Building.png'
+import card1 from '../../assets/card1.png'
+import card2 from '../../assets/Bedroom.png'
+import card3 from '../../assets/card3.png'
+import dog1 from '../../assets/Bathroom.png'
+import dog2 from '../../assets/Patio.png'
+import dog3 from '../../assets/Bedroom 2.png'
+import dog4 from '../../assets/Kitchen.png'
+import dog5 from '../../assets/Rooftop 1.jpg'
+import dog6 from '../../assets/Living Room.png'
+import instagram from '../../assets/instagram.png'
+import bed from '../../assets/bed.png'
+import toilet from '../../assets/toilet.png'
+import stove from '../../assets/stove.png'
+import sofa from '../../assets/sofa.png'
+import balcony from '../../assets/balcony.png'
+import pool from '../../assets/pool.png'
+import rooftop from '../../assets/rooftop.png'
+
+function Home(){ 
+        const [currentSlide, setCurrentSlide] = useState(0);
+
+        const slides = [
+            dog1, 
+            dog2,
+            dog3,
+            dog4,
+            dog5,
+            dog6,
+          ];
+
+        const nextSlide = () => {
+          setCurrentSlide((prevSlide) => (prevSlide === slides.length - 1 ? 0 : prevSlide + 1));
+        };
+      
+        const prevSlide = () => {
+          setCurrentSlide((prevSlide) => (prevSlide === 0 ? slides.length - 1 : prevSlide - 1));
+        };
+
 
     return(
-        <div className='Home'>
-                <section class='hero'>
-                    <img src='' alt='hero pic'/>
+        <div className='home'>
+                <section className='home__hero'>
+                    <img src={Cenote} alt='hero pic'/>
                     <div>
-                        <p className='home__title'>BIENVENIDO</p>
-                        <h2>ECO - LUXURY VILLA FOR SALE IN TULUM $290,000</h2>
+                        <p className='home__hero--title'>BIENVENIDO</p>
+                        <h2>YOUR PEACE IN THE HEART OF TULUM $315,000</h2>
                     </div>
                 </section>
-                <section class='squares'>
-                    <h2> VILLA LOFT, XUNKARI</h2>
-                    <div>
-                        <div>
-                            <img src='' alt='bed'/>
+                <section className='home__squares'>
+                    <h2> VILLA LOFT, MONA MIA</h2>
+                    <div className='home__squares--flex'>
+                        <div className='home__squares--single'>
+                            <img className='home__squares--icon' src={bed} alt='bed'/>
                             <p>2 bedrooms</p>
                         </div>
-                        <div>
-                            <img src='' alt='toilet'/>
+                        <div className='home__squares--single'>
+                            <img className='home__squares--icon' src={toilet} alt='toilet'/>
                             <p>2 bathrooms</p>
                         </div>
-                        <div>
-                            <img src='' alt='stove'/>
-                            <p>kitchen</p>
+                        <div className='home__squares--single'>
+                            <img className='home__squares--icon' src= {stove} alt='stove'/>
+                            <p>  kitchen </p>
                         </div>
-                        <div>
-                            <img src='' alt='sofa'/>
+                        <div className='home__squares--single'>
+                            <img className='home__squares--icon' src={sofa} alt='sofa'/>
                             <p>Living room</p>
                         </div>
-                        <div>
-                            <img src='' alt='umbrella'/>
+                        <div className='home__squares--single'>
+                            <img className='home__squares--icon' src={balcony} alt='balcony'/>
                             <p>2 terraces</p>
                         </div>
-                        <div>
-                            <img src='' alt='pool'/>
+                        <div className='home__squares--single'>
+                            <img className='home__squares--icon' src={pool} alt='pool'/>
                             <p>Private Pool</p>
                         </div>
-                        <div>
-                            <img src='' alt='rooftop'/>
+                        <div className='home__squares--single'>
+                            <img className='home__squares--icon' src={rooftop} alt='rooftop'/>
                             <p>Rooftop</p>
                         </div>
                     </div>
                 </section>
-                <section class='details'>
-                    <h3>Private sale by the owner. Delivery May 2023!</h3>
+                <section className='home__details'>
+                    <h3>Private sale by the owner. Delivery January 2024!</h3>
                     <h3>Interior: 126m2 / 1,351ft2</h3>
                     <h3>Exterior: 64m2 / 6,94ft2</h3>
                     <h3>Total: 190m2 / 2,045ft2</h3>
                     <h3>24 - Hour Security, Maintenace & Administration, Mayan Host, Cenote Membership.</h3>
-                    <button>CONTACT US</button>
+                    <Link to='/Contact'><button>CONTACT US</button></Link>
                 </section>
-                <section class='amenities'>
-                    <h4>VILLA LOFT, XUNKARI TULUM</h4>
-                    <p>gallery</p>
+                <section className='home__slideshow'>
+                    <h4>VILLA LOFT, MONA MIA</h4>
+                    <div className="slideshow-container">
+
+                        <button className="prev" onClick={prevSlide}>&#10094;</button>
+                        <img src = {slides[currentSlide]} alt = {`Slide ${currentSlide}`}/>
+                        <button className="next" onClick={nextSlide} >&#10095;</button>        
+                    </div>
+                
                 </section>
-                <section class='cards'>
-                    <h4>CONNECT TO DISCONECT</h4>
-                    <div>
-                        <div>
-                            <img src='photo' alt= 'map'/>
+                <section className='home__cards'>
+                    <h4>CONNECT TO DISCONNECT</h4>
+                    <div className='home__cards--flex'>
+                        <div className='home__cards--single'>
+                            <img className='home__cards--img' src={card1} alt= 'map'/>
                             <div>
                                 <h3>Location</h3>
                                 <p>Strategically located outside of Tulum's urbanc chaos. Connect with nature and tranquility of the moment</p>
                             </div>
                         </div>  
-                        <div>
-                            <img src='photo' alt= 'pool'/>
+                        <div className='home__cards--single'>
+                            <img className='home__cards--img' src={card2} alt= 'pool'/>
                             <div>
                                 <h3>Location</h3>
-                                <p>Spa, Mirador, Zen Garden, Fire Pit, Chill Zone, Gym, Yoga, Climbing, Co-working, MezcalBar, BBQ Zone</p>
+                                <p>Infinity Pool, Biometric Security, Rooftop Terrace, Penthouse Loft, Open Concept Living, Natural Materials</p>
                             </div>
                         </div>  
-                        <div>  
-                            <img src='photo' alt= 'Arch'/>
+                        <div className='home__cards--single'>  
+                            <img className='home__cards--img' src={card3} alt= 'Arch'/>
                             <div>
                                 <h3>Invest in Tulum</h3>
                                 <p>Tulum has an attractive real estate market that returns high ROI. Invest in one of the most in-demand vacation destinations in the world.</p>
@@ -80,23 +127,25 @@ function Home(){
                         </div>  
                     </div>
                 </section>
-                <section class='gallery'>
+                <section className='home__gallery'>
                     <h4>PHOTO GALLERY, PHASE I</h4>
-                    <div>
-                        <img src='' alt= 'placeholder'/>
-                        <img src='' alt= 'placeholder'/>
-                        <img src='' alt= 'placeholder'/>
-                        <img src='' alt= 'placeholder'/>
-                        <img src='' alt= 'placeholder'/>
-                        <img src='' alt= 'placeholder'/>
+                    <div className='home__gallery--container'>
+                        <img className='home__gallery--img' src={dog1} alt= 'placeholder'/>
+                        <img className='home__gallery--img' src={dog2} alt= 'placeholder'/>
+                        <img className='home__gallery--img' src={dog3} alt= 'placeholder'/>
+                        <img className='home__gallery--img' src={dog4} alt= 'placeholder'/>
+                        <img className='home__gallery--img' src={dog5} alt= 'placeholder'/>
+                        <img className='home__gallery--img' src={dog6} alt= 'placeholder'/>
                     </div>
                 </section>
-                <footer class='contact'>
+                <footer className='home__contact'>
                     <h3>UNIQUE OPPORTUNITY</h3>
-                    <p>Xunkari Tulum Phase III is almost sold out and will take years until completed. Take ownership of this beautiful Xunkari Villa Loft Unit as soon as May 2023!</p>
-                    <p>Xunkari eco-luxury living as a real-estate Tulum project already won a multitude of awards and earned the spotlight of global recognition.</p>
-                    <button>CONTACT US TODAY!</button>
-                    <img src='' alt='instagram'/>
+                    <p>Mona Mia Loft is almost complete. Take ownership of this beautiful Mona Mia Loft Unit as soon as January 2024!</p>
+                    <p>With the opening of Tulum Airport ,TQO, this loft at this price point in the area will not be on the market for long.</p>
+                    <div className='home__contact--flex'>
+                        <Link to='/Contact'><button>CONTACT US TODAY!</button></Link>
+                        <img className='home__contact--instagram' src={instagram} alt='instagram'/>
+                    </div>
                 </footer>
         </div>
     )
