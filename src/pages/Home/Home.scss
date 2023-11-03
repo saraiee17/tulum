@@ -8,6 +8,14 @@
         background-color: colors.$herobackground;
         display: flex;
         margin: 1rem;
+        align-items: center;
+        height: 10%;
+        &--title{
+            color: colors.$gallerytext;
+        }
+        &--slogan{
+            color: colors.$gallerytext;
+        }
     }
     &__squares{
         background-color: colors.$cubebackground;
