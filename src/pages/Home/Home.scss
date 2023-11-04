@@ -9,6 +9,11 @@
         display: flex;
         margin: 1rem;
         align-items: center;
+        &--text{
+            @include mixins.between{
+                padding-left: 5rem;
+             }
+        }
         &--title{
             color: colors.$gallerytext;
         }
@@ -17,6 +22,15 @@
         }
         &--pic{
             max-width: 200px;
+            @include mixins.tablet{
+               max-width: 350px;
+            }
+            @include mixins.between{
+                max-width: 450px;
+             }
+            @include mixins.desktop{
+                max-width: 550px;
+             }
         }
     }
     &__squares{

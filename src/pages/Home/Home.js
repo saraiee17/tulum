@@ -2,7 +2,7 @@ import './Home.scss';
 import {Link} from 'react-router-dom';
 import { useState } from 'react';
 import Cenote from '../../assets/Building.png'
-import card1 from '../../assets/card1.png'
+import card1 from '../../assets/curd.jpg'
 import card2 from '../../assets/Bedroom.png'
 import card3 from '../../assets/card3.png'
 import dog1 from '../../assets/Bathroom.png'
@@ -45,7 +45,7 @@ function Home(){
         <div className='home'>
                 <section className='home__hero'>
                     <img src={Cenote} alt='hero pic' className="home__hero--pic"/>
-                    <div>
+                    <div className="home__hero--text">
                         <p className='home__hero--title'>BIENVENIDO</p>
                         <h2 className='home__hero--slogan'>YOUR PEACE IN THE HEART OF TULUM $315,000</h2>
                     </div>
