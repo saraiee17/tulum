@@ -9,12 +9,14 @@
         display: flex;
         margin: 1rem;
         align-items: center;
-        height: 10%;
         &--title{
             color: colors.$gallerytext;
         }
         &--slogan{
             color: colors.$gallerytext;
+        }
+        &--pic{
+            max-width: 200px;
         }
     }
     &__squares{
@@ -58,10 +60,6 @@
         }
     }
     &__gallery{
-        padding-left: 1rem;
-        padding-right: 1rem;
-        padding-top: 1.5rem;
-        padding-bottom: 1rem;
         &--container{
             display: flex;
             flex-direction: column;
@@ -69,7 +67,6 @@
             height: auto;
             flex-direction: row;
             flex-wrap: wrap;
-            padding-left: 3.5rem;
             @include mixins.tablet{
                 padding-left: 7rem;
             }

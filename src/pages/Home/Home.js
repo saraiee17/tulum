@@ -44,7 +44,7 @@ function Home(){
     return(
         <div className='home'>
                 <section className='home__hero'>
-                    <img src={Cenote} alt='hero pic'/>
+                    <img src={Cenote} alt='hero pic' className="home__hero--pic"/>
                     <div>
                         <p className='home__hero--title'>BIENVENIDO</p>
                         <h2 className='home__hero--slogan'>YOUR PEACE IN THE HEART OF TULUM $315,000</h2>
