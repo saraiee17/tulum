@@ -88,7 +88,7 @@ function Home(){
                     <h3 className="deeper">Interior: 126m2 / 1,351ft2</h3>
                     <h3 className="deeper">Exterior: 64m2 / 6,94ft2</h3>
                     <h3 className="deeper">Total: 190m2 / 2,045ft2</h3>
-                    <h3 className="deeper">24 - Hour Security, Maintenace & Administration, Mayan Host, Cenote Membership.</h3>
+                    <h3 className="deeper">Biometric Security, Rooftop Terrace, Infinity Pool </h3>
                     <Link to='/Contact'><button>CONTACT US</button></Link>
                 </section>
                 <section className='home__slideshow'>
@@ -96,7 +96,7 @@ function Home(){
                     <div className="slideshow-container">
 
                         <button className="prev" onClick={prevSlide}>&#10094;</button>
-                        <img src = {slides[currentSlide]} alt = {`Slide ${currentSlide}`}/>
+                        <img className="slideImg" src = {slides[currentSlide]} alt = {`Slide ${currentSlide}`}/>
                         <button className="next" onClick={nextSlide} >&#10095;</button>        
                     </div>
                 
