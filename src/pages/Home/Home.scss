@@ -184,6 +184,6 @@ button:hover{
   
       /* On hover, add a black background color with a little bit see-through */
       &:hover {
-        background-color: colors.$herobackground;
+        background-color: rgb(245,243,243,0.9);
       }
     }
