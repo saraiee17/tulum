@@ -32,7 +32,7 @@ function App() {
                   <Contact />
                 </div>
               }/>
-        <Route path= '/modal' element = {<Nav/>}/>
+        <Route path= '/nav' element = {<Nav/>}/>
         </Routes>
       </BrowserRouter>
         
