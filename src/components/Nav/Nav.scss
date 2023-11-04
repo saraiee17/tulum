@@ -13,6 +13,17 @@
     width: 100%;
 }
 
+.nav:hover{
+    color: colors.$navunderline;
+}
+
+.nav{
+    margin:0.5rem;
+}
+.material-symbols-rounded:hover{
+    color: colors.$navunderline;
+}
+
 .logo{
     max-height: 40%;
 }

@@ -3,6 +3,7 @@
 @use "../../styles/mixins";
 
 .contact{
+    color: colors.$title;
     &__button{
         background-color: colors.$whatsapp;
         color:white;

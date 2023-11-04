@@ -51,7 +51,7 @@ function Home(){
                     </div>
                 </section>
                 <section className='home__squares'>
-                    <h2> VILLA LOFT, MONA MIA</h2>
+                    <h2 className="deeper"> VILLA LOFT, MONA MIA</h2>
                     <div className='home__squares--flex'>
                         <div className='home__squares--single'>
                             <img className='home__squares--icon' src={bed} alt='bed'/>
@@ -84,11 +84,11 @@ function Home(){
                     </div>
                 </section>
                 <section className='home__details'>
-                    <h3>Private sale by the owner. Delivery January 2024!</h3>
-                    <h3>Interior: 126m2 / 1,351ft2</h3>
-                    <h3>Exterior: 64m2 / 6,94ft2</h3>
-                    <h3>Total: 190m2 / 2,045ft2</h3>
-                    <h3>24 - Hour Security, Maintenace & Administration, Mayan Host, Cenote Membership.</h3>
+                    <h3 className="deeper">Private sale by the owner. Delivery January 2024!</h3>
+                    <h3 className="deeper">Interior: 126m2 / 1,351ft2</h3>
+                    <h3 className="deeper">Exterior: 64m2 / 6,94ft2</h3>
+                    <h3 className="deeper">Total: 190m2 / 2,045ft2</h3>
+                    <h3 className="deeper">24 - Hour Security, Maintenace & Administration, Mayan Host, Cenote Membership.</h3>
                     <Link to='/Contact'><button>CONTACT US</button></Link>
                 </section>
                 <section className='home__slideshow'>
@@ -107,21 +107,21 @@ function Home(){
                         <div className='home__cards--single'>
                             <img className='home__cards--img' src={card1} alt= 'map'/>
                             <div>
-                                <h3>Location</h3>
+                                <h3 className="deeper">Location</h3>
                                 <p>Strategically located outside of Tulum's urbanc chaos. Connect with nature and tranquility of the moment</p>
                             </div>
                         </div>  
                         <div className='home__cards--single'>
                             <img className='home__cards--img' src={card2} alt= 'pool'/>
                             <div>
-                                <h3>Location</h3>
+                                <h3 className="deeper">Location</h3>
                                 <p>Infinity Pool, Biometric Security, Rooftop Terrace, Penthouse Loft, Open Concept Living, Natural Materials</p>
                             </div>
                         </div>  
                         <div className='home__cards--single'>  
                             <img className='home__cards--img' src={card3} alt= 'Arch'/>
                             <div>
-                                <h3>Invest in Tulum</h3>
+                                <h3 className="deeper">Invest in Tulum</h3>
                                 <p>Tulum has an attractive real estate market that returns high ROI. Invest in one of the most in-demand vacation destinations in the world.</p>
                             </div>
                         </div>  
@@ -139,7 +139,7 @@ function Home(){
                     </div>
                 </section>
                 <footer className='home__contact'>
-                    <h3>UNIQUE OPPORTUNITY</h3>
+                    <h3 className="deeper">UNIQUE OPPORTUNITY</h3>
                     <p>Mona Mia Loft is almost complete. Take ownership of this beautiful Mona Mia Loft Unit as soon as January 2024!</p>
                     <p>With the opening of Tulum Airport ,TQO, this loft at this price point in the area will not be on the market for long.</p>
                     <div className='home__contact--flex'>

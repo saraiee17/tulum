@@ -8,8 +8,8 @@ function Nav(){
     return(
         <div className='Nav'>
             <span class="material-symbols-rounded" onClick={() => window.history.back()}>close</span>
-            <h1 onClick={() => navigate('/')}>Home</h1>
-            <h2 onClick={() => navigate('/Contact')}>Contact Page</h2>
+            <h1 className= "nav" onClick={() => navigate('/')}>Home</h1>
+            <h2 className="nav" onClick={() => navigate('/Contact')}>Contact Page</h2>
             <img className="logo" src={logo}/>
         </div>
     )
