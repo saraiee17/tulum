@@ -1,35 +1,90 @@
 @use "../../styles/colors";
 @use "../../styles/global";
 @use "../../styles/mixins";
+@use "../../styles/fonts";
 
 
 .home{
+    margin-bottom: 3rem;
     &__hero{
         background-color: colors.$herobackground;
         display: flex;
         margin: 1rem;
         align-items: center;
+        @include mixins.between{
+            margin: 3rem;
+         }
+         @include mixins.desktop{
+            margin-left: 5rem;
+            margin-right: 5rem;
+         }
         &--text{
+            //500
+            @include mixins.mobile{
+                max-width: 500px;
+                max-height: 40px;
+                margin-bottom: 2rem;
+             }
+              //600
+              @include mixins.pretablet{
+                max-width: 300px;
+                max-height: 40px;
+             }
+             //768
+             @include mixins.tablet{
+                max-width: 400px;
+                max-height: 40px;
+             }
+             @include mixins.prebetween{
+                max-width: 400px;
+                max-height: 40px;
+                padding-left: 3rem;
+             }
+             //1000
             @include mixins.between{
-                padding-left: 5rem;
+                max-width: 400px;
+                max-height: 40px;
+                padding-left: 1rem;
+                padding-right: 1rem;
+             }
+             //1280
+             @include mixins.desktop{
+                max-width: 500px;
+                max-height: 100px;
+                margin-left: 2rem;
              }
         }
         &--title{
             color: colors.$gallerytext;
         }
         &--slogan{
-            color: colors.$gallerytext;
+            // color: colors.$gallerytext;
+            color: rgb(49, 48, 48);
+            font-weight: normal;
+            font-family: 'Eco';
         }
         &--pic{
-            max-width: 200px;
-            @include mixins.tablet{
-               max-width: 350px;
-            }
-            @include mixins.between{
-                max-width: 450px;
+            max-width: 250px;
+            //600
+            @include mixins.pretablet{
+                max-width: 350px;
              }
-            @include mixins.desktop{
+             //768
+            @include mixins.tablet{
+               max-width: 400px;
+            }
+            //960
+            @include mixins.prebetween{
+                max-width: 500px;
+                margin-right: 5rem;
+             }
+            //1000
+            @include mixins.between{
                 max-width: 550px;
+             }
+             //1200
+            @include mixins.desktop{
+                width: 100vh;
              }
         }
     }

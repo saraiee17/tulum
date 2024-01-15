@@ -1,5 +1,17 @@
+@mixin pretablet {
+    @media (min-width: 600px) {
+        @content;
+    }
+}
+
 @mixin tablet {
     @media (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin prebetween {
+    @media (min-width:940px) {
         @content;
     }
 }

@@ -9,11 +9,14 @@
     flex-direction: column;
     align-items: center;
     color: colors.$title;
+    margin-top: 2rem;
     &__title{
-        border: 2px solid colors.$gallerytext;
+        border: 1.5px solid rgb(54, 53, 53);;
         margin: 1rem;
-        font-weight:400;
+        font-weight:100;
         width: 340px;
+        font-family: 'Eco';
+        color: rgb(56, 55, 55);
     }
     &__flex{
         display: flex;

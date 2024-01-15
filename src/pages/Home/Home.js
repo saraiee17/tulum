@@ -47,7 +47,7 @@ function Home(){
                     <img src={Cenote} alt='hero pic' className="home__hero--pic"/>
                     <div className="home__hero--text">
                         <p className='home__hero--title'>BIENVENIDO</p>
-                        <h2 className='home__hero--slogan'>YOUR PEACE IN THE HEART OF TULUM $315,000</h2>
+                        <h2 className='home__hero--slogan'>ECO-LUXURY VILLA FOR SALE IN TULUM $315,000</h2>
                     </div>
                 </section>
                 <section className='home__squares'>
@@ -82,11 +82,6 @@ function Home(){
                             <p>Rooftop</p>
                         </div>
                     </div>
-                </section>
-                <section className='home__details'>
-                    <h3 className="deeper">Private sale by the owner. Available Now!</h3>
-                    <h3 className="deeper">Biometric Security, Rooftop Terrace, Infinity Pool </h3>
-                    <Link to='/Contact'><button>CONTACT US</button></Link>
                 </section>
                 <section className='home__slideshow'>
                     <h4>VILLA LOFT, MONA MIA</h4>
