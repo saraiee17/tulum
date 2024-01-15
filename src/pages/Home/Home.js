@@ -84,7 +84,7 @@ function Home(){
                     </div>
                 </section>
                 <section className='home__slideshow'>
-                    <h4>VILLA LOFT, MONA MIA</h4>
+                    <h4>CONNECT TO DISCONNECT</h4>
                     <div className="slideshow-container">
 
                         <button className="prev" onClick={prevSlide}>&#10094;</button>
@@ -94,7 +94,6 @@ function Home(){
                 
                 </section>
                 <section className='home__cards'>
-                    <h4>CONNECT TO DISCONNECT</h4>
                     <div className='home__cards--flex'>
                         <div className='home__cards--single'>
                             <img className='home__cards--img' src={card1} alt= 'map'/>

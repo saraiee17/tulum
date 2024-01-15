@@ -132,11 +132,25 @@
         margin: 2rem;
     }
     &__cards{
+        margin: 2rem;
+        @include mixins.tablet{
+            transform: scale(0.6);
+            margin: 0;
+            margin-right: 11rem;
+        }
+        @include mixins.prebetween{
+            transform: scale(0.9);
+            margin: 0;
+        }
         &--flex{
-            margin: 1rem;
             @include mixins.tablet{
                 display: flex;  
             }
+        }
+        &--title{
+            margin: 0;
+            transform: none;
+
         }
         &--single{
             display: flex;
