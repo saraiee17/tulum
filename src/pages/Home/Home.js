@@ -84,10 +84,7 @@ function Home(){
                     </div>
                 </section>
                 <section className='home__details'>
-                    <h3 className="deeper">Private sale by the owner. Delivery January 2024!</h3>
-                    <h3 className="deeper">Interior: 126m2 / 1,351ft2</h3>
-                    <h3 className="deeper">Exterior: 64m2 / 6,94ft2</h3>
-                    <h3 className="deeper">Total: 190m2 / 2,045ft2</h3>
+                    <h3 className="deeper">Private sale by the owner. Available Now!</h3>
                     <h3 className="deeper">Biometric Security, Rooftop Terrace, Infinity Pool </h3>
                     <Link to='/Contact'><button>CONTACT US</button></Link>
                 </section>
@@ -140,7 +137,7 @@ function Home(){
                 </section>
                 <footer className='home__contact'>
                     <h3 className="deeper">UNIQUE OPPORTUNITY</h3>
-                    <p>Mona Mia Loft is almost complete. Take ownership of this beautiful Mona Mia Loft Unit as soon as January 2024!</p>
+                    <p>Mona Mia Loft is now complete. Take ownership of this beautiful Mona Mia Loft Unit!</p>
                     <p>With the opening of Tulum Airport ,TQO, this loft at this price point in the area will not be on the market for long.</p>
                     <div className='home__contact--flex'>
                         <Link to='/Contact'><button>CONTACT US TODAY!</button></Link>
