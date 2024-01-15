@@ -91,6 +91,25 @@
     &__squares{
         background-color: colors.$cubebackground;
         padding: 1rem;
+        transform: scale(0.48);
+             //500
+            @include mixins.mobile{
+                transform: scale(0.5);
+            }
+            //600
+            @include mixins.pretablet{
+                transform: scale(0.6);
+             }
+             //768
+            @include mixins.tablet{
+                transform: scale(0.8);
+            }
+            //960
+            @include mixins.prebetween{
+                transform: scale(1);
+             }
+            //1000
+
         &--flex{
             margin: 1rem;
             display: flex;
